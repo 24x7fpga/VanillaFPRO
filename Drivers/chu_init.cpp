@@ -1,3 +1,5 @@
+#include "chu_init.h"
+
 // FPRO UTILITY ROUTINE IMPLEMENTATION
 TimerCore _sys_timer(get_slot_addr(BRIDGE_BASE, TIMER_SLOT));
 UartCore uart(get_slot_addr(BRIDGE_BASE, UART_SLOT));
@@ -7,7 +9,7 @@ unsigned long now_us() {
 }
 
 unsigned long now_ms() {
-  return ((unsigned long) _sys_timer.read_time() / 1000):
+  return ((unsigned long) _sys_timer.read_time() / 1000);
 }
 
 void sleep_us(unsigned long int t) {
@@ -15,10 +17,10 @@ void sleep_us(unsigned long int t) {
 }
 
 void sleep_ms(unsigned long int t) {
-  _sys_timer.sleep(uint64_t(1000*t)):
+  _sys_timer.sleep(uint64_t(1000*t));
 }
 
-void debug_on(count char *str , int n1, int n2) {
+void debug_on(const char *str , int n1, int n2) {
   uart.disp("debug: ");
   uart.disp(str);
   uart.disp(n1);
@@ -30,6 +32,7 @@ void debug_on(count char *str , int n1, int n2) {
   uart.disp(") \n\r");
 }
 
-void.debug_off() {
+void debug_off() {
 
 }
+
