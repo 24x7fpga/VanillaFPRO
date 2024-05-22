@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<section name="Workbench">
-	<item key="scw_hwspec" value="/home/kiran/Projects/fpgaProjects/VanillaFPRO/Projects/vanilla_test1/vanilla_test1_vitis"/>
-	<item key="sdx_program_fpga_view_bit_bmm_browse_key" value="/home/kiran/Projects/fpgaProjects/VanillaFPRO/Projects/vanilla_test1/vanilla_test1_vitis/mcs_top_vanilla/hw"/>
-	<item key="fpga_elf_mem_selection" value="/home/kiran/Projects/fpgaProjects/VanillaFPRO/Projects/vanilla_test1/vanilla_test1_vitis/vanilla_test1/Debug"/>
-</section>
